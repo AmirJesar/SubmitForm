@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MyForm</title>
+<style>
+body {
+	background: skyblue;
+}
+
+.container {
+	width: 50%;
+	border: 2px Solid black;
+	margin: auto;
+	padding: 20px;
+	font-size: 20px;
+	font-family: verdana;
+}
+
+#form table tr td input {
+	font-size: 20px;
+	font-family: verdana;
+}
+
+#form table tr td button {
+	border: 1px solid black;
+	width: 150px;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 25px;
+	font-family: verdana;
+	height: 40px;
+}
+
+#form table tr td select {
+	width: 100px;
+	height: 30px;
+	font-size: 25px;
+	font-family: verdana;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1 style="text-align: center;">MyForm</h1>
+		<form id="form" action="SubmitForm" method="post">
+			<table>
+				<tr>
+					<td>Enter your name:</td>
+					<td><input type="text" name="user_name"
+						placeholder="Enter here" /></td>
+				</tr>
+				<tr>
+					<td>Enter password:</td>
+					<td><input type="password" name="user_password"
+						placeholder="Enter here" /></td>
+				</tr>
+				<tr>
+					<td>Enter your Gmail:</td>
+					<td><input type="email" name="user_email"
+						placeholder="Enter here" /></td>
+				</tr>
+				<tr>
+					<td>Select Gender:</td>
+					<td><input type="radio" name="gender" value="male"> <label
+						for="male">Male</label> <input type="radio" name="gender"
+						value="female"> <label for="female">Female</label></td>
+				</tr>
+
+				<tr>
+					<td>Select your course</td>
+					<td><select name="course">
+							<option value="java">Java</option>
+							<option value="C++">C++</option>
+							<option value="Ruby">Ruby</option>
+							<option value="javaScript">JavaScript</option>
+							<option value="Go">Go</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td style="text-align: right;"><input type="checkbox"
+						value="checked" name="condition" /></td>
+					<td>Agree Terms and condition:</td>
+
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<button type="submit">Register</button>
+						<button type="reset">Reset</button>
+
+					</td>
+				</tr>
+
+			</table>
+		</form>
+	</div>
+</body>
+</html>
